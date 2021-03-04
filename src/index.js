@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Card from './Card';
 import reportWebVitals from './reportWebVitals';
+import { robots } from "./robots";
 import 'tachyons';
 
-ReactDOM.render(<Card />, document.getElementById('root'));
+ReactDOM.render(<Card id={robots[0].id} name={robots[0].name} email={robots[0].email} />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
